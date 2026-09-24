@@ -1,0 +1,33 @@
+body { font-size: 18px; line-height: 1.75; }
+h1,h2,h3,h4 { color: #183344; }
+h2 { font-size: 1.7rem; margin-top: 2.5rem; }
+a { text-underline-offset: .2em; }
+a:focus-visible,button:focus-visible { outline: 3px solid #B16A32; outline-offset: 4px; }
+.intro-header .page-heading h1 { font-size: clamp(2.3rem, 5vw, 3.7rem); letter-spacing: -.035em; }
+.intro-header .page-heading .page-subheading { font-size: 1.25rem; line-height: 1.6; max-width: 720px; margin: 1rem auto; }
+.intro-header .page-heading { padding-bottom: 1.5rem; }
+.eyebrow { font: 700 .76rem/1.5 'Open Sans',Arial,sans-serif; text-transform: uppercase; letter-spacing: .12em; color: #006B70; }
+.lead { font-size: 1.3rem; line-height: 1.75; }
+.lab-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.2rem; margin: 2.4rem 0; }
+.lab-card { padding: 1.5rem; background: #F4F7F8; border-top: 4px solid #006B70; }
+.lab-card h2 { margin-top: .5rem; font-size: 1.45rem; }
+.lab-card p { font-size: 1rem; }
+.lab-card a { font-family: 'Open Sans',Arial,sans-serif; font-weight: 700; font-size: .95rem; }
+.source-note { border-top: 1px solid #CDD9DD; padding-top: 1.25rem; font-size: .9rem; }
+.readme-body { overflow-wrap: anywhere; }
+.readme-body h1 { font-size: 2rem; margin-top: 2.5rem; }
+.readme-body h2 { font-size: 1.6rem; }
+.readme-body h3 { margin-top: 1rem; }
+.readme-body table { display: block; overflow-x: auto; }
+.readme-body img { max-width: 100%; }
+.table-scroll { overflow-x: auto; margin: 1.5rem 0 3rem; }
+#ryan-v-ryan { width: 100%; margin: 0; border-collapse: collapse; font-size: 1rem; }
+#ryan-v-ryan caption { caption-side: bottom; color: #475D68; font-size: .85rem; padding: .8rem 0; }
+#ryan-v-ryan th { background: #183344; width: 50%; }
+#ryan-v-ryan th h3 { color: white; font-size: 1.25rem; margin: 0; }
+#ryan-v-ryan th, #ryan-v-ryan td { padding: 1.2rem; border: 1px solid #CDD9DD; vertical-align: top; }
+#ryan-v-ryan td { background: #F4F7F8; }
+#ryan-v-ryan h4 { font-size: 1.1rem; color: #006B70; }
+#ryan-v-ryan ul { padding-left: 1.25rem; }
+@media(max-width:600px) { .lab-grid { grid-template-columns: 1fr; } .navbar-brand { font-size: .95rem; } #ryan-v-ryan th, #ryan-v-ryan td { padding: .65rem; } }
+h1[id],h2[id],h3[id] { scroll-margin-top: 85px; }
