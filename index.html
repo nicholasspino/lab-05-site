@@ -1,5 +1,26 @@
 ---
-layout: home
-title: My website
-subtitle: This is where I will tell my friends way too much about me
+layout: page
+title: Evidence & Public Practice
+subtitle: Making analytical work easier to understand, inspect, and share.
+use-site-title: true
 ---
+<p class="eyebrow">Public affairs · Data communication · Lab 05</p>
+<p class="lead">Good analysis needs a clear path to its audience. This site explores how a small, well-organized website can make methods and supporting material easier to find.</p>
+<p>Built from the Beautiful Jekyll template, this project brings together three practical skills: organizing content with Markdown, applying styles to specific page elements, and generating a table from structured data. Each example keeps the underlying files available for inspection.</p>
+<div class="lab-grid">
+  <section class="lab-card">
+    <p class="eyebrow">01 / Publish</p>
+    <h2>From files to a website</h2>
+    <p>The Getting Started page preserves the template's setup guidance and uses three distinct section styles to demonstrate selective CSS.</p>
+    <a href="{{ '/getstarted' | relative_url }}">Explore Getting Started <span aria-hidden="true">→</span></a>
+  </section>
+  <section class="lab-card">
+    <p class="eyebrow">02 / Structure</p>
+    <h2>From data to a table</h2>
+    <p>The comparison page uses YAML data and Liquid loops to keep the information separate from its presentation.</p>
+    <a href="{{ '/table-demo' | relative_url }}">View the Table Demo <span aria-hidden="true">→</span></a>
+  </section>
+</div>
+<h2>Why this matters</h2>
+<p>For public-facing research, accessibility includes more than making a document available. Readers also need a coherent structure and enough context to understand what they are seeing. A reusable publishing workflow can support that goal while making revisions easier to trace.</p>
+<p class="source-note">Adapted from <a href="https://github.com/DS4PS/beautiful-jekyll">Beautiful Jekyll, archived by DS4PS</a>. Original theme by <a href="https://deanattali.com">Dean Attali</a>.</p>
