@@ -1,0 +1,82 @@
+---
+layout: page
+---
+  
+{{ content }}
+
+
+
+
+<h2> Ryan vs Ryan: Liquid Table Demo </h2>
+
+<div class="table-scroll" tabindex="0" role="region" aria-label="Ryan comparison table">
+<table id="ryan-v-ryan">
+<caption>Illustrative comparison from the DS4PS teaching example; entries are humorous sample data.</caption>
+
+<thead>
+  <tr>
+    <th scope="col">  <h3>  Ryan Reynolds  </h3>  </th>
+    <th scope="col">  <h3>  Ryan Gosling  </h3>  </th>
+  </tr>
+</thead>
+
+<tbody>
+
+<tr>
+  
+  
+  <td>
+  
+    
+    <h4>  Strengths  </h4>
+    <ul>
+      
+      {% for item in page.reynolds.strengths %}
+         <li>{{ item | escape }}</li>
+      {% endfor %}
+      
+    </ul>
+    
+    <br>
+
+    <h4>  Weaknesses  </h4>
+    <ul>
+      
+      {% for item in page.reynolds.weaknesses %}
+         <li>{{ item | escape }}</li>
+      {% endfor %}
+      
+    </ul>  
+    
+    
+  </td>
+  
+
+
+  <td>
+  
+    <h4>  Strengths  </h4>
+    <ul>
+      
+      {% for item in page.gosling.strengths %}
+        <li>{{ item | escape }}</li>
+      {% endfor %}
+      
+    </ul>
+    
+    <br>
+    
+    <h4>  Weaknesses  </h4>
+    <ul>
+      
+      {% for item in page.gosling.weaknesses %}
+         <li>{{ item | escape }}</li>
+      {% endfor %}
+      
+    </ul>
+
+  </td>
+</tr> 
+
+</table>
+</div>
